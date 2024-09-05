@@ -29,6 +29,7 @@ $terms = get_terms([
 ]);
 
 $journal_link = get_permalink(pll_get_post(137));
+$journal_all_link = get_permalink(pll_get_post(328));
 ?>
 
 <main>
@@ -44,7 +45,7 @@ $journal_link = get_permalink(pll_get_post(137));
         <div class="carousel__viewport" data-carousel-viewport>
           <div class="carousel__container">
             <div class="carousel__slide" data-carousel-slide>
-              <a class="journal__tag" href="#">
+              <a class="journal__tag" href="<?= $journal_all_link ?>">
                 А-Я
               </a>
             </div>
