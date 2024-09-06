@@ -98,3 +98,5 @@ pll_register_string('more_than_50k', 'более 50 000 евро');
 pll_register_string('fill_form_current_type', 'Заполните формы и мы расскажем особенности программы и подойдет ли вам этот тип релокации');
 pll_register_string('send_request', 'Оставить заявку');
 pll_register_string('step', 'шаг');
+pll_register_string('az', 'А-Я');
+pll_register_string('articles_by_type', 'Статьи по типу ВНЖ');
