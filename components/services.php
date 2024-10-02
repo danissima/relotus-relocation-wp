@@ -57,5 +57,4 @@ $services = get_posts([
       </div>
     </div>
   </div>
-  </div>
 </section>
