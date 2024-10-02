@@ -34,7 +34,7 @@ $promo_slider = get_field('promo_slider');
                 ?>
                   <div class="home-hero-slider__slide carousel__slide" data-carousel-slide-link="<?= $slide['slide_link'] ?>">
                     <div class="home-hero-slider__card">
-                      <h4><?= $slide['slide_title'] ?></h4>
+                      <div class="h4"><?= $slide['slide_title'] ?></div>
                       <p><?= $slide['slide_description'] ?></p>
                     </div>
                   </div>

@@ -63,7 +63,7 @@ $promo_list = get_field('promo_list');
           ?>
             <div class="slug-about-card <?= $primary_class ?>">
               <div class="slug-about-card__content">
-                <h3><?= $card['title'] ?></h3>
+                <div class="h3"><?= $card['title'] ?></div>
                 <p><?= $card['description'] ?></p>
               </div>
               <div class="slug-about-card__image bg-cover mask-<?= $card['image_shape'] ?>"
@@ -104,7 +104,7 @@ $promo_list = get_field('promo_list');
               ?>
                 <div class="carousel__slide" data-carousel-slide>
                   <div class="slug-for-card">
-                    <h3><?= $item['title'] ?></h3>
+                    <div class="h3"><?= $item['title'] ?></div>
                     <p><?= $item['description'] ?></p>
                     <svg class="slug-for-card__pattern" width="404" height="204" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="#pattern-1" />
@@ -152,7 +152,7 @@ $promo_list = get_field('promo_list');
               ?>
                 <div class="carousel__slide" data-carousel-slide>
                   <div class="slug-documents-card numbers-pseudo" data-slug-documents-card>
-                    <h3><?= $card['title'] ?></h3>
+                    <div class="h3"><?= $card['title'] ?></div>
                     <p><?= $card['description'] ?></p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ $promo_list = get_field('promo_list');
           foreach (get_field('steps_cards') as $card) :
           ?>
             <div class="slug-steps-card" data-step="<?= pll__('шаг') ?>">
-              <h3><?= $card['title'] ?></h3>
+              <div class="h3"><?= $card['title'] ?></div>
               <p>
                 <?= $card['description'] ?>
               </p>

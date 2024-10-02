@@ -42,7 +42,7 @@ $services = get_posts([
                     <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="#shape-<?= $svg_id ?>" />
                     </svg>
-                    <h3><?= $title ?></h3>
+                    <div class="h3"><?= $title ?></div>
                     <p>
                       <?= get_field('description', $id) ?>
                     </p>

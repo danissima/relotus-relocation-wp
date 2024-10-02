@@ -19,7 +19,7 @@ $post_id = pll_get_post(271);
               <svg class="slug-advantages__icon" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#checkmark-flower" />
               </svg>
-              <h3><?= $card['title'] ?></h3>
+              <div class="h3"><?= $card['title'] ?></div>
               <p><?= $card['description'] ?></p>
             </div>
           <?php endforeach; ?>
