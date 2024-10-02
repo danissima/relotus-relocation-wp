@@ -38,7 +38,7 @@ $terms_names = array_map(fn($term) => $term->name, $terms);
         </div>
         <div class="article__anchors" style="grid-area: anchors;">
           <div class="block block_equal-padding">
-            <h3><?= pll__('Содержание') ?></h3>
+            <div class="h3"><?= pll__('Содержание') ?></div>
             <ol data-article-anchors></ol>
           </div>
         </div>

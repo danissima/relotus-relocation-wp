@@ -38,7 +38,7 @@ $visas = get_posts([
             ?>
                 <div class="carousel__slide" data-carousel-slide>
                   <a class="visas__card" href="<?= $link ?>">
-                    <h3><?= $title ?></h3>
+                    <div class="h3"><?= $title ?></div>
                     <svg width="347" height="175" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="#pattern-1" />
                     </svg>

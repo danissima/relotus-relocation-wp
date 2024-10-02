@@ -37,7 +37,7 @@ $post_id = pll_get_post(271);
                       <use xlink:href="#play-circle" />
                     </svg>
                   </div>
-                  <h5 data-title><?= $video['title'] ?></h5>
+                  <div class="h5" data-title><?= $video['title'] ?></div>
                 </div>
               </div>
             <?php endforeach; ?>

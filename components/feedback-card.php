@@ -9,7 +9,7 @@ $description = $args['description'];
   <div class="feedback-card__avatar bg-cover"
     style="background-image: url(<?= $photo ?>);">
   </div>
-  <h4><?= $name ?></h4>
+  <div class="h4"><?= $name ?></div>
   <div class="feedback-card__text">
     <p><?= $description ?></p>
     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

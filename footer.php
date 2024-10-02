@@ -167,7 +167,7 @@ if (pll_current_language('slug') === 'en') {
       </svg>
     </button>
     <div class="modal__content">
-      <h3 class="modal__title"><?= pll__('Бесплатно оценим шансы на переезд в Испанию') ?></h3>
+      <div class="modal__title h3"><?= pll__('Бесплатно оценим шансы на переезд в Испанию') ?></div>
       <p class="modal__description">
         <?= pll__('В Испании есть более 30 программ миграции для иностранцев, поэтому самостоятельно разобраться во всех вариантах и выбрать программу очень сложно.') ?>
       </p>
@@ -334,7 +334,7 @@ if (pll_current_language('slug') === 'en') {
       </svg>
     </button>
     <div class="modal__content">
-      <h3 class="modal__title">
+      <div class="modal__title h3">
         <?php
         $consultation_popup_title = get_field('consultation_popup_title', get_queried_object_id());
         if ($consultation_popup_title) {
@@ -343,7 +343,7 @@ if (pll_current_language('slug') === 'en') {
           echo pll__('Бесплатная консультация');
         }
         ?>
-      </h3>
+      </div>
       <p class="modal__description">
         <?= pll__('Заполните формы и мы расскажем особенности программы и подойдет ли вам этот тип релокации') ?>
       </p>
@@ -394,7 +394,7 @@ if (pll_current_language('slug') === 'en') {
       </svg>
     </button>
     <div class="modal__content">
-      <h3 class="modal__title" data-modal-title></h3>
+      <div class="modal__title h3" data-modal-title></div>
         <p class=" modal__description" data-modal-description>
         </p>
     </div>
@@ -410,7 +410,7 @@ if (pll_current_language('slug') === 'en') {
       </svg>
     </button>
     <div class="modal__content">
-      <h3 class="modal__title" data-modal-title></h3>
+      <div class="modal__title h3" data-modal-title></div>
     </div>
   </div>
 </div>
