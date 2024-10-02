@@ -387,8 +387,8 @@ if (pll_current_language('slug') === 'en') {
     </button>
     <div class="modal__content">
       <div class="modal__title h3" data-modal-title></div>
-        <p class=" modal__description" data-modal-description>
-        </p>
+      <p class=" modal__description" data-modal-description>
+      </p>
     </div>
   </div>
 </div>
@@ -624,7 +624,7 @@ if (pll_current_language('slug') === 'en') {
 <script src="<?= $baseUrl ?>/assets/js/libs/embla.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/maska.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/lite-youtube.js"></script>
-<script type="module" src="<?= $baseUrl ?>/assets/js/app.js""></script>
+<script type="module" src="<?= $baseUrl ?>/assets/js/app.js"></script>
 
 </body>
 
