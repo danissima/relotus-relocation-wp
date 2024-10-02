@@ -375,8 +375,8 @@ if (pll_current_language('slug') === 'en') {
           </div>
         </div>
         <button class="form__submit button button_primary" type="submit" data-button="consultation-submit">
-            <span class="button__text"><?= pll__('Оставить заявку') ?></span>
-            <span class="loader"><span></span></span>
+          <span class="button__text"><?= pll__('Оставить заявку') ?></span>
+          <span class="loader"><span></span></span>
         </button>
         <p style="color: #2BAF2B; margin-top: 10px; display: none;" data-form-success><?= pll__('Заявка отправлена!') ?></p>
         <p style="color: red; margin-top: 10px; display: none;" data-form-error><?= pll__('Ошибка. Попробуйте позже') ?></p>
@@ -395,8 +395,8 @@ if (pll_current_language('slug') === 'en') {
     </button>
     <div class="modal__content">
       <div class="modal__title h3" data-modal-title></div>
-        <p class=" modal__description" data-modal-description>
-        </p>
+      <p class=" modal__description" data-modal-description>
+      </p>
     </div>
   </div>
 </div>
@@ -632,7 +632,7 @@ if (pll_current_language('slug') === 'en') {
 <script src="<?= $baseUrl ?>/assets/js/libs/embla.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/maska.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/lite-youtube.js"></script>
-<script type="module" src="<?= $baseUrl ?>/assets/js/app.js""></script>
+<script type="module" src="<?= $baseUrl ?>/assets/js/app.js"></script>
 
 </body>
 
