@@ -18,7 +18,7 @@ $whatsapp = get_field('whatsapp', 'option');
     <div class="container">
 
       <?php get_template_part('components/breadcrumbs') ?>
-
+ <h1 class="h1 h1_blue"><?= pll__('Контакты') ?></h1>
       <div class="block block_equal-padding">
         <div class="contacts__grid">
           <div class="contacts__links" style="grid-area: links;">

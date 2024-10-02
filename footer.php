@@ -177,20 +177,20 @@ if (pll_current_language('slug') === 'en') {
       <form class="chances-form form" data-form="chances">
         <div class="form__fields">
           <div class="input">
-            <input type="text" placeholder="<?= pll__('Ваше имя') ?>">
+            <input type="text" name="name" required placeholder="<?= pll__('Ваше имя') ?>">
           </div>
           <div class="input">
-            <input type="text" placeholder="<?= pll__('Ваше гражданство') ?>">
+            <input type="text" name="citizenship" required placeholder="<?= pll__('Ваше гражданство') ?>">
           </div>
           <div class="input">
-            <input type="text" placeholder="<?= pll__('Где проживаете сейчас') ?>">
+            <input type="text" name="location" required placeholder="<?= pll__('Где проживаете сейчас') ?>">
           </div>
           <div class="input">
-            <input type="text" placeholder="<?= pll__('Ваш возраст') ?>">
+            <input type="text" name="age" required placeholder="<?= pll__('Ваш возраст') ?>">
           </div>
 
           <div class="select" data-select>
-            <select name="people" id="chances-people" data-select-field>
+            <select name="people" id="chances-people" required data-select-field>
               <option value=""><?= pll__('В каком составе планируете переезд?') ?></option>
               <option value="<?= pll__('Я один') ?>"><?= pll__('Я один') ?></option>
               <option value="<?= pll__('С партнером') ?>"><?= pll__('С партнером') ?></option>
@@ -226,7 +226,7 @@ if (pll_current_language('slug') === 'en') {
           </div>
 
           <div class="select" data-select>
-            <select name="period" id="chances-period" data-select-field>
+            <select name="period" id="chances-period" required data-select-field>
               <option value=""><?= pll__('На какой срок планируете переезд?') ?></option>
               <option value="<?= pll__('До 1 года') ?>"><?= pll__('До 1 года') ?></option>
               <option value="<?= pll__('До 2 лет') ?>"><?= pll__('До 2 лет') ?></option>
@@ -258,10 +258,10 @@ if (pll_current_language('slug') === 'en') {
           </div>
 
           <div class="select" data-select>
-            <select required name="budget" id="chances-budget" data-select-field>
+            <select name="budget" id="chances-budget" required data-select-field>
               <option value=""><?= pll__('Какой бюджет готовы заложить для переезда?') ?></option>
               <option value="<?= pll__('До 2 000 евро') ?>"><?= pll__('До 2 000 евро') ?></option>
-              <option value="<?= pll__('2 000 -  10 000 евро') ?>"><?= pll__('2 000 - 10 000 евро') ?></option>
+              <option value="<?= pll__('2 000 - 10 000 евро') ?>"><?= pll__('2 000 - 10 000 евро') ?></option>
               <option value="<?= pll__('10 000 - 50 000 евро') ?>"><?= pll__('10 000 - 50 000 евро') ?></option>
               <option value="<?= pll__('более 50 000 евро') ?>"><?= pll__('более 50 000 евро') ?></option>
             </select>
@@ -283,8 +283,8 @@ if (pll_current_language('slug') === 'en') {
                 </button>
               </li>
               <li>
-                <button class="select__item" type="button" data-value="<?= pll__('10 000 евро - 50 000 евро') ?>">
-                  <?= pll__('10 000 евро - 50 000 евро') ?>
+                <button class="select__item" type="button" data-value="<?= pll__('10 000 - 50 000 евро') ?>">
+                  <?= pll__('10 000 - 50 000 евро') ?>
                 </button>
               </li>
               <li>
@@ -294,10 +294,10 @@ if (pll_current_language('slug') === 'en') {
           </div>
 
           <div class="input">
-            <input type="tel" placeholder="<?= pll__('Ваш номер телефона') ?>" data-maska="+###############">
+            <input type="tel" name="phone" placeholder="<?= pll__('Ваш номер телефона') ?>" required data-maska="+###############">
           </div>
           <div class="input">
-            <input type="email" placeholder="<?= pll__('Ваш E-mail') ?>">
+            <input type="email" name="email" placeholder="<?= pll__('Ваш E-mail') ?>" required>
           </div>
           <div class="checkbox">
             <label class="checkbox__label" for="chances-privacy">
@@ -314,9 +314,12 @@ if (pll_current_language('slug') === 'en') {
             </label>
           </div>
         </div>
-        <button class="form__submit button button_primary" type="submit">
-          <?= pll__('Узнать шансы на переезд') ?>
+        <button class="form__submit button button_primary" type="submit" data-button="chances-submit">
+          <span class="button__text"><?= pll__('Узнать шансы на переезд') ?></span>
+          <span class="loader"><span></span></span>
         </button>
+        <p style="color: #2BAF2B; margin-top: 10px; display: none;" data-form-success><?= pll__('Заявка отправлена!') ?></p>
+        <p style="color: red; margin-top: 10px; display: none;" data-form-error><?= pll__('Ошибка. Попробуйте позже') ?></p>
       </form>
     </div>
   </div>
@@ -347,14 +350,14 @@ if (pll_current_language('slug') === 'en') {
       <form class="chances-form form" data-form="consultation">
         <div class="form__fields">
           <div class="input">
-            <input type="text" placeholder="<?= pll__('Ваше имя') ?>">
+            <input type="text" name="name" placeholder="<?= pll__('Ваше имя') ?>" required>
           </div>
 
           <div class="input">
-            <input type="tel" placeholder="<?= pll__('Ваш номер телефона') ?>" data-maska="+###############">
+            <input type="tel" name="phone" placeholder="<?= pll__('Ваш номер телефона') ?>" required data-maska="+###############">
           </div>
           <div class="input">
-            <input type="email" placeholder="<?= pll__('Ваш E-mail') ?>">
+            <input type="email" name="email" placeholder="<?= pll__('Ваш E-mail') ?>" required>
           </div>
           <div class="checkbox">
             <label class="checkbox__label" for="consultation-privacy">
@@ -371,7 +374,12 @@ if (pll_current_language('slug') === 'en') {
             </label>
           </div>
         </div>
-        <button class="form__submit button button_primary" type="submit"><?= pll__('Оставить заявку') ?></button>
+        <button class="form__submit button button_primary" type="submit" data-button="consultation-submit">
+            <span class="button__text"><?= pll__('Оставить заявку') ?></span>
+            <span class="loader"><span></span></span>
+        </button>
+        <p style="color: #2BAF2B; margin-top: 10px; display: none;" data-form-success><?= pll__('Заявка отправлена!') ?></p>
+        <p style="color: red; margin-top: 10px; display: none;" data-form-error><?= pll__('Ошибка. Попробуйте позже') ?></p>
       </form>
     </div>
   </div>
@@ -386,7 +394,7 @@ if (pll_current_language('slug') === 'en') {
       </svg>
     </button>
     <div class="modal__content">
-      <h3 class="modal__title"" data-modal-title></h3>
+      <h3 class="modal__title" data-modal-title></h3>
         <p class=" modal__description" data-modal-description>
         </p>
     </div>

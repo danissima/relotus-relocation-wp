@@ -51,7 +51,7 @@ get_header();
           2.3. Веб-сайт&nbsp;— совокупность графических и&nbsp;информационных материалов, а&nbsp;также программ для
           ЭВМ и&nbsp;баз данных,
           обеспечивающих их&nbsp;доступность в&nbsp;сети интернет по&nbsp;сетевому
-          адресу&nbsp;<a class="link" href="https://relotus-relocation.com">https://relotus-relocation.com</a>.
+          адресу&nbsp;<a class="link" href="https://relotus-relocation.com/">https://relotus-relocation.com/</a>.
         </p>
 
         <p>
@@ -86,7 +86,7 @@ get_header();
 
         <p>
           2.8. Персональные данные&nbsp;— любая информация, относящаяся прямо или косвенно к&nbsp;определенному или
-          определяемому Пользователю веб-сайта&nbsp;<a class="link" href="https://relotus-relocation.com">https://relotus-relocation.com</a>.
+          определяемому Пользователю веб-сайта&nbsp;<a class="link" href="https://relotus-relocation.com/">https://relotus-relocation.com/</a>.
         </p>
 
         <p>
@@ -101,7 +101,7 @@ get_header();
         </p>
 
         <p>
-          2.10. Пользователь&nbsp;— любой посетитель веб-сайта&nbsp;<a class="link" href="https://relotus-relocation.com">https://relotus-relocation.com</a>.
+          2.10. Пользователь&nbsp;— любой посетитель веб-сайта&nbsp;<a class="link" href="https://relotus-relocation.com/">https://relotus-relocation.com/</a>.
         </p>
 
         <p>
@@ -397,7 +397,7 @@ get_header();
         <p>
           8.3. В&nbsp;случае выявления неточностей в&nbsp;персональных данных, Пользователь может актуализировать
           их&nbsp;самостоятельно, путем направления Оператору уведомление на&nbsp;адрес электронной почты
-          Оператора&nbsp;<a class="link" href="mailto:privacy@thismywebsite.com">privacy@thismywebsite.com</a>&nbsp;с&nbsp;пометкой «Актуализация персональных данных».
+          Оператора&nbsp;<a class="link" href="mailto:privacy@thismywebsite.com">privacy@thismywebsite.com</a>&nbsp;с пометкой «Актуализация персональных данных».
         </p>
 
         <p>
@@ -405,7 +405,7 @@ get_header();
           персональные данные, если иной срок не&nbsp;предусмотрен договором или действующим
           законодательством. Пользователь может в&nbsp;любой момент отозвать свое согласие на&nbsp;обработку
           персональных данных, направив Оператору уведомление посредством электронной почты на&nbsp;электронный адрес
-          Оператора&nbsp;<a class="link" href="mailto:privacy@thismywebsite.com">privacy@thismywebsite.com</a>&nbsp;с&nbsp;пометкой «Отзыв согласия на&nbsp;обработку персональных
+          Оператора&nbsp;<a class="link" href="mailto:privacy@thismywebsite.com">privacy@thismywebsite.com</a>&nbsp;с пометкой «Отзыв согласия на&nbsp;обработку персональных
           данных».
         </p>
 
@@ -501,7 +501,7 @@ get_header();
 
         <p>
           12.3. Актуальная версия Политики в&nbsp;свободном доступе расположена в&nbsp;сети Интернет
-          по&nbsp;адресу&nbsp;<a class="link" href="https://relotus-relocation.com/privacy">https://relotus-relocation.com/privacy</a>.
+          по&nbsp;адресу&nbsp;<a class="link" href="https://relotus-relocation.com/privacy/">https://relotus-relocation.com/privacy/</a>.
         </p>
       </div>
     </div>

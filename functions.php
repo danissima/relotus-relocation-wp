@@ -100,3 +100,5 @@ pll_register_string('send_request', 'Оставить заявку');
 pll_register_string('step', 'шаг');
 pll_register_string('az', 'А-Я');
 pll_register_string('articles_by_type', 'Статьи по типу ВНЖ');
+pll_register_string('request_success', 'Заявка отправлена!');
+pll_register_string('request_error', 'Ошибка. Попробуйте позже');

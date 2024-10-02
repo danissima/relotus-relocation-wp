@@ -15,8 +15,11 @@ $promo_slider = get_field('promo_slider');
       <div class="home-hero__content">
         <div class="home-hero__text block block_equal-padding">
           <h1 class="h1 h1_blue">
-            <?= pll__('Поможем переехать в Испанию без стресса и ошибок за 45 дней') ?>
+            <?= pll__('Стартап-виза') ?>
           </h1>
+			<p class="h1 h1_blue">
+            <?= pll__('Поможем переехать в Испанию без стресса и ошибок за 45 дней') ?>
+          </p>
           <p><?= pll__('Подберем лучший ВНЖ или визу под ваши цели и ситуацию') ?></p>
           <button class="button button_primary" type="button" data-button="consultation">
             <?= pll__('Бесплатная консультация') ?>
@@ -75,7 +78,7 @@ $promo_slider = get_field('promo_slider');
   include 'components/products.php';
   include 'components/services.php';
   ?>
-
+	
   <section class="home-stats section">
     <div class="container">
       <div class="home-stats__content">
