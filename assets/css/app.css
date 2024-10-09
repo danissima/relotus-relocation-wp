@@ -3636,7 +3636,7 @@ main > article + section {
   white-space: nowrap;
 }
 .breadcrumbs__item + .breadcrumbs__item::before {
-  content: "—";
+  content: "―";
   margin-left: 0.25em;
 }
 .breadcrumbs__item:last-child {

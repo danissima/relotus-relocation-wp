@@ -281,6 +281,32 @@ $promo_list = get_field('promo_list');
     </div>
   </section>
 
+  <?php if (get_field('advantages_cards')): ?>
+    <section class="slug-benefits section">
+      <div class="container">
+        <div class="block">
+          <header class="section__header">
+            <h2><?= pll__('Преимущества программы') ?></h2>
+          </header>
+          <div class="slug-benefits__grid">
+            <?php
+            $advantages = get_field('advantages_cards');
+            foreach ($advantages as $card):
+            ?>
+              <div class="slug-benefits-item">
+                <div class="slug-benefits-item__icon">
+                  <img src="<?= $card['icon'] ?>" alt="">
+                </div>
+                <div class="h3"><?= $card['title'] ?></div>
+                <p><?= $card['description'] ?></p>
+              </div>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
+
   <?php
   $journal_title = get_field('journal_title');
   $journal_topics = get_field('journal_topics');
