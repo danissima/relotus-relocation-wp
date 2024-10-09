@@ -42,6 +42,36 @@ $terms_names = array_map(fn($term) => $term->name, $terms);
             <ol data-article-anchors></ol>
           </div>
         </div>
+
+        <div class="article__share">
+          <p><?= pll__('Поделиться') ?>:</p>
+          <script src="https://yastatic.net/share2/share.js"></script>
+          <div class="ya-share2" data-curtain data-size="l" data-shape="round"
+            data-services="vkontakte,telegram,viber,whatsapp"></div>
+        </div>
+
+        <?php if (get_field('author_name')): ?>
+          <div class="article-author block block_equal-padding">
+            <div class="h3"><?= pll__('Автор статьи') ?></div>
+            <div class="article-author__content">
+              <div class="article-author__info">
+                <div class="article-author__avatar">
+                  <img class="image-full-cover" loading="lazy" src="<?= get_field('author_avatar') ?>" alt="<?= get_field('author_name') ?>">
+                </div>
+                <div class="article-author__name">
+                  <div class="h4"><?= get_field('author_name') ?></div>
+                  <div class="article-author__position"><?= get_field('author_position') ?></div>
+                </div>
+              </div>
+              <p class="article-author__description">
+                <?= get_field('author_description') ?>
+              </p>
+            </div>
+            <button class="button button_primary" type="button" data-button="consultation">
+              <?= pll__('Бесплатная консультация') ?>
+            </button>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </article>

@@ -13,7 +13,6 @@ function setupArticleAnchors() {
   let currentAnchorId = ''
   const SCROLL_MARGIN_TOP = 106
 
-    console.log(headings)
 
   if (!headings.length) {
     const link = createLink(articleTitle.textContent, '#article-content')
