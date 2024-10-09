@@ -74,7 +74,10 @@ $promo_list = get_field('promo_list');
       </div>
   </section>
 
-  <?php include 'components/why-spain.php' ?>
+  <?php
+  include 'components/why-spain.php';
+  include 'components/text-section.php';
+  ?>
 
   <section class="slug-for section">
     <div class="container">

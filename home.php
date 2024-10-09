@@ -104,6 +104,7 @@ $promo_slider = get_field('promo_slider');
   </section>
 
   <?php
+  include 'components/text-section.php';
   include 'components/journal-preview.php';
   include 'components/feedback.php';
   ?>

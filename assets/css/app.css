@@ -781,7 +781,7 @@ main > article + section {
 .plain-html > * {
   margin: revert;
 }
-.plain-html > *:not(h2, h3) {
+.plain-html > *:not(h1, h2, h3, h4) {
   font-size: 18px;
   line-height: 25.38px;
 }
