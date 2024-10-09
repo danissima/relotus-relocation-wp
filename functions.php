@@ -102,3 +102,4 @@ pll_register_string('az', 'А-Я');
 pll_register_string('articles_by_type', 'Статьи по типу ВНЖ');
 pll_register_string('request_success', 'Заявка отправлена!');
 pll_register_string('request_error', 'Ошибка. Попробуйте позже');
+pll_register_string('page_not_found', 'Страница не найдена.');
