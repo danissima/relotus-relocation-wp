@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Политика конфиденциальности
+ * Template name: Партнерам
  */
 get_header();
 ?>
@@ -12,7 +12,10 @@ get_header();
 
       <?php get_template_part('components/breadcrumbs') ?>
 
-      <h1><?= pll__('Политика в отношении обработки персональных данных') ?></h1>
+      <h1 class="h1 h1_orange"><?= get_field('title') ?></h1>
+      <div class="text-page__banner">
+        <img class="image-full-cover" loading="lazy" src="<?= get_field('banner') ?>" alt="">
+      </div>
       <div class="block block_equal-padding plain-html">
         <?= the_content() ?>
       </div>

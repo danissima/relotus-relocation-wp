@@ -106,3 +106,4 @@ pll_register_string('page_not_found', 'Страница не найдена.');
 pll_register_string('article_author', 'Автор статьи');
 pll_register_string('share', 'Поделиться');
 pll_register_string('program_advantages', 'Преимущества программы');
+pll_register_string('privacy_policy_long', 'Политика в отношении обработки персональных данных');

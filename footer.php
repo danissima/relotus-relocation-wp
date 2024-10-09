@@ -37,6 +37,10 @@ $privacy_link = [
   'url' => get_permalink(pll_get_post(3)),
   'title' => get_the_title(pll_get_post(3)),
 ];
+$partners_link = [
+  'url' => get_permalink(pll_get_post(384)),
+  'title' => get_the_title(pll_get_post(384)),
+];
 
 $privact_checkbox_label = 'Я согласен с <a class="link" href="' . $privacy_link['url'] . '" target="_blank">политикой обработки</a> персональных данных сайта';
 
@@ -65,6 +69,9 @@ if (pll_current_language('slug') === 'en') {
         </li>
         <li>
           <a href="<?= $contacts_link['url'] ?>" class="footer__link link"><?= $contacts_link['title'] ?></a>
+        </li>
+        <li>
+          <a href="<?= $partners_link['url'] ?>" class="footer__link link"><?= $partners_link['title'] ?></a>
         </li>
       </ul>
 
