@@ -76,6 +76,10 @@ $terms_names = array_map(fn($term) => $term->name, $terms);
     </div>
   </article>
 
+  <?php
+  include 'components/contact-form.php';
+  ?>
+
   <section class="journal-more section">
     <div class="container">
       <div class="block">

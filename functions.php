@@ -108,3 +108,5 @@ pll_register_string('share', 'Поделиться');
 pll_register_string('program_advantages', 'Преимущества программы');
 pll_register_string('privacy_policy_long', 'Политика в отношении обработки персональных данных');
 pll_register_string('new', 'Новое');
+pll_register_string('send_request_free_consultation', 'Оставьте заявку на бесплатную консультацию эксперта');
+pll_register_string('your_question', 'Ваш вопрос');

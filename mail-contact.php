@@ -20,7 +20,7 @@ $mail->Password = "d4EOX%aK6KsD"; // beget mail password
 $data = [
     'Name' => $_POST['name'],
     'Phone' => $_POST['phone'],
-    'Email' => $_POST['email'],
+    'Question' => $_POST['question'],
 ];
 
 $body = '';
@@ -37,7 +37,7 @@ $mail->AddAddress('admin@relotus-relocation.com', 'Relotus Relocation');
 $mail->SetFrom('admin@relotus-relocation.com', 'admin@relotus-relocation.com');
 $mail->Sender = 'admin@relotus-relocation.com';
 $mail->isHTML(true);
-$mail->Subject = "Consultation";
+$mail->Subject = "Request expert consultation";
 $mail->Body = $body;
 
 try{
