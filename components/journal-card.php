@@ -9,6 +9,9 @@ $image = get_field('image', $id)['sizes']["medium_large"];
 ?>
 
 <article class="journal-card">
+  <!-- <div class="journal-card__badge">
+    <?= pll__('Новое') ?>
+  </div> -->
   <a class="journal-card__image bg-cover" href="<?= $link ?>"
     style="background-image: url(<?= $image ?>);"></a>
   <div class="h4"><a href="<?= $link ?>"><?= $title ?></a></div>
