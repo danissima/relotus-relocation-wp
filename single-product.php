@@ -77,6 +77,7 @@ $promo_list = get_field('promo_list');
   <?php
   include 'components/why-spain.php';
   include 'components/text-section.php';
+  include 'components/contact-form.php';
   ?>
 
   <section class="slug-for section">

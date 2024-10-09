@@ -21,6 +21,10 @@ get_header();
       </div>
     </div>
   </section>
+
+  <?php
+  include 'components/contact-form.php';
+  ?>
 </main>
 
 <?php get_footer(); ?>

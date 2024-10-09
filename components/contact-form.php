@@ -50,7 +50,7 @@ if (pll_current_language('slug') === 'en') {
           <p style="color: red; margin-top: 10px; display: none;" data-form-error><?= pll__('Ошибка. Попробуйте позже') ?></p>
         </form>
         <div class="contact-form__image">
-          <img src="<?= $baseUrl ?>/assets/images/content/home-hero-bg.jpg" alt="">
+          <img loading="lazy" src="<?= $baseUrl ?>/assets/images/content/home-hero-bg.jpg" alt="">
         </div>
       </div>
     </div>
