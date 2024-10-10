@@ -49,6 +49,43 @@ function journal_load_more()
 add_action('wp_ajax_journal_load_more', 'journal_load_more');
 add_action('wp_ajax_nopriv_journal_load_more', 'journal_load_more');
 
+/* query to load more stories posts */
+function stories_load_more()
+{
+  $ajaxposts = new WP_Query([
+    'post_type' => 'stories',
+    'posts_per_page' => 6,
+    'paged' => $_POST['paged'],
+  ]);
+
+  $response = '';
+  $max_pages = $ajaxposts->max_num_pages;
+
+  if ($ajaxposts->have_posts()) {
+    ob_start();
+
+    foreach ($ajaxposts->posts as $post) {
+      $response .= get_template_part('components/story-article-card', null, $post);
+    }
+
+    $output = ob_get_contents();
+    ob_end_clean();
+  } else {
+    $response = '';
+  }
+
+  $result = [
+    'total_pages' => $max_pages,
+    'html' => $output,
+  ];
+
+  echo json_encode($result);
+  exit;
+}
+
+add_action('wp_ajax_stories_load_more', 'stories_load_more');
+add_action('wp_ajax_nopriv_stories_load_more', 'stories_load_more');
+
 pll_register_string('visas', 'Визы и ВНЖ');
 pll_register_string('services', 'Услуги');
 pll_register_string('check_chances', 'Оценить шансы');
