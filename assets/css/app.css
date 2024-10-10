@@ -1042,6 +1042,10 @@ main > article + section {
 .header__button_telegram, .header__burger {
   display: none;
 }
+.header__phone {
+  font-size: 14px;
+  line-height: 19.94px;
+}
 .header__phone svg {
   margin-right: 10px;
   color: #1CC7D0;
@@ -1136,6 +1140,8 @@ main > article + section {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   color: #4C4C4C;
+  font-size: 14px;
+  line-height: 19.94px;
 }
 .header-nav__subcontent {
   position: absolute;
@@ -1183,12 +1189,16 @@ main > article + section {
 .header-nav__item:hover .header-nav__overlay {
   background-color: rgba(29, 29, 29, 0.8);
 }
+.header-nav__subitem {
+  font-size: 14px;
+  line-height: 19.94px;
+}
 .header-nav__subitem + .header-nav__subitem {
   margin-top: 8px;
 }
 @media (max-width: 1279px) {
   .header-nav__item > span, .header-nav__item > a {
-    padding: 0 10px;
+    padding: 0 8px;
   }
 }
 

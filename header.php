@@ -127,6 +127,10 @@ $privacy_link = [
             </li>
 
             <li class="header-nav__item">
+              <a class="link" href="<?= $stories_link['url'] ?>"><?= $stories_link['title'] ?></a>
+            </li>
+
+            <li class="header-nav__item">
               <a class="link" href="<?= $feedback_link['url'] ?>"><?= $feedback_link['title'] ?></a>
             </li>
 

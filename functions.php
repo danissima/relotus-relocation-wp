@@ -150,3 +150,4 @@ pll_register_string('your_question', 'Ваш вопрос');
 pll_register_string('clients_cases', 'Кейсы клиентов');
 pll_register_string('stories_from_people', 'Истории людей, которые переехали в Испанию');
 pll_register_string('certificates', 'Сертификаты');
+pll_register_string('startup-visa', 'Стартап-виза');

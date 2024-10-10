@@ -65,7 +65,7 @@ $whatsapp = get_field('whatsapp', 'option');
                 href="https://yandex.ru/maps/10429/barcelona/house/ZlcHcwRmTEIbWF90YHV1d3Vh/?ll=2.157385%2C41.393479&utm_medium=mapframe&utm_source=maps&z=14.14"
                 style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Диагональ, 419 —
                 Яндекс Карты</a><iframe
-                src="https://yandex.ru/map-widget/v1/?ll=2.157385%2C41.393479&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1ODkyNDAzNjg3EkpTcGFpbiwgQ29tdW5pdGF0IGF1dMOybm9tYSBkZSBDYXRhbHVueWEsIEJhcmNlbG9uYSwgQXZpbmd1ZGEgRGlhZ29uYWwsIDQxOSIKDYrVCUAVK5QlQg%2C%2C&z=14.14"
+                src="https://yandex.ru/map-widget/v1/?lang=<?= pll_current_language() ?>_RU&ll=2.157385%2C41.393479&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1ODkyNDAzNjg3EkpTcGFpbiwgQ29tdW5pdGF0IGF1dMOybm9tYSBkZSBDYXRhbHVueWEsIEJhcmNlbG9uYSwgQXZpbmd1ZGEgRGlhZ29uYWwsIDQxOSIKDYrVCUAVK5QlQg%2C%2C&z=14.14"
                 width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
             </div>
           </div>
