@@ -22,6 +22,10 @@ $email = get_field('email', 'option');
 $telegram = get_field('telegram', 'option');
 $whatsapp = get_field('whatsapp', 'option');
 
+$about_link = [
+  'url' => get_permalink(pll_get_post(428)),
+  'title' => get_the_title(pll_get_post(428)),
+];
 $journal_link = [
   'url' => get_permalink(pll_get_post(137)),
   'title' => get_the_title(pll_get_post(137)),
@@ -111,6 +115,10 @@ $privacy_link = [
             </li>
 
             <li class="header-nav__item">
+              <a class="link" href="<?= $about_link['url'] ?>"><?= $about_link['title'] ?></a>
+            </li>
+
+            <li class="header-nav__item">
               <a class="link" href="<?= $journal_link['url'] ?>"><?= $journal_link['title'] ?></a>
             </li>
 
@@ -176,6 +184,9 @@ $privacy_link = [
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#three-lines" />
                 </svg>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#cross" />
+                </svg>
               </button>
             </div>
           </div>
@@ -219,6 +230,10 @@ $privacy_link = [
                 endif;
                 ?>
               </ul>
+            </li>
+
+            <li class="burger-menu__link">
+              <a class="link" href="<?= $about_link['url'] ?>"><?= $about_link['title'] ?></a>
             </li>
 
             <li class="burger-menu__link">

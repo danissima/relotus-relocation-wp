@@ -10,5 +10,6 @@ import './chances-form.js'
 import './consultation-form.js'
 import './contact-form.js'
 import './stories.js'
+import './about-us.js'
 
 new Maska.MaskInput('[data-maska]')
