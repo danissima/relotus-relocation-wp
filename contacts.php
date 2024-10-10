@@ -73,6 +73,10 @@ $whatsapp = get_field('whatsapp', 'option');
       </div>
     </div>
   </section>
+
+  <?php
+  include 'components/contact-form.php';
+  ?>
 </main>
 
 <?php get_footer(); ?>

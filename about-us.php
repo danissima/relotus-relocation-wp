@@ -18,8 +18,8 @@ get_header();
 
   <?php
   include 'components/text-section.php';
-  include 'components/contact-form.php';
   include 'components/team.php';
+  include 'components/contact-form.php';
   ?>
 
   <?php if (get_field('documents')): ?>

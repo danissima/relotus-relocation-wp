@@ -45,7 +45,7 @@ $query = new WP_Query([
   </section>
 
   <?php
-  include 'components/promo-banner.php';
+  include 'components/contact-form.php';
   include 'components/products.php';
   include 'components/services.php';
   ?>

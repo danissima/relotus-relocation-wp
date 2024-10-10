@@ -29,6 +29,10 @@ $journal_link = [
   'url' => get_permalink(pll_get_post(137)),
   'title' => get_the_title(pll_get_post(137)),
 ];
+$stories_link = [
+  'url' => get_permalink(pll_get_post(419)),
+  'title' => get_the_title(pll_get_post(419)),
+];
 $feedback_link = [
   'url' => get_permalink(pll_get_post(143)),
   'title' => get_the_title(pll_get_post(143)),
@@ -70,6 +74,9 @@ if (pll_current_language('slug') === 'en') {
         </li>
         <li>
           <a href="<?= $journal_link['url'] ?>" class="footer__link link"><?= $journal_link['title'] ?></a>
+        </li>
+        <li>
+          <a href="<?= $stories_link['url'] ?>" class="footer__link link"><?= $stories_link['title'] ?></a>
         </li>
         <li>
           <a href="<?= $feedback_link['url'] ?>" class="footer__link link"><?= $feedback_link['title'] ?></a>

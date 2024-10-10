@@ -30,6 +30,10 @@ $journal_link = [
   'url' => get_permalink(pll_get_post(137)),
   'title' => get_the_title(pll_get_post(137)),
 ];
+$stories_link = [
+  'url' => get_permalink(pll_get_post(419)),
+  'title' => get_the_title(pll_get_post(419)),
+];
 $feedback_link = [
   'url' => get_permalink(pll_get_post(143)),
   'title' => get_the_title(pll_get_post(143)),
@@ -238,6 +242,10 @@ $privacy_link = [
 
             <li class="burger-menu__link">
               <a class="link" href="<?= $journal_link['url'] ?>"><?= $journal_link['title'] ?></a>
+            </li>
+
+            <li class="burger-menu__link">
+              <a class="link" href="<?= $stories_link['url'] ?>"><?= $stories_link['title'] ?></a>
             </li>
 
             <li class="burger-menu__link">
