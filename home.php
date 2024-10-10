@@ -106,6 +106,7 @@ $promo_slider = get_field('promo_slider');
   <?php
   include 'components/contact-form.php';
   include 'components/text-section.php';
+  include 'components/stories-feedback.php';
   include 'components/journal-preview.php';
   include 'components/feedback.php';
   ?>
