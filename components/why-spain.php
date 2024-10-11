@@ -9,8 +9,9 @@ $post_id = pll_get_post(271);
         <h2 class="h2 h2_orange"><?= get_field('why_spain_title', $post_id) ?></h2>
       </header>
       <div class="slug-advantages__grid">
-        <div class="slug-advantages__image bg-cover"
-          style="background-image: url(<?= get_field('why_spain_image', $post_id) ?>);"></div>
+        <div class="slug-advantages__image">
+          <img class="image-full-cover" loading="lazy" src="<?= get_field('why_spain_image', $post_id) ?>" alt="">
+        </div>
         <div class="slug-advantages__cards block">
           <?php
           foreach (get_field('why_spain_cards', $post_id) as $card) :

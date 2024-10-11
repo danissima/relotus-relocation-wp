@@ -696,6 +696,12 @@ main > article + section {
      object-fit: cover;
 }
 
+.absolute-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .bg-cover {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1618,6 +1624,7 @@ main > article + section {
 }
 .home-stats__image {
   border-radius: var(--radius);
+  overflow: hidden;
 }
 .home-stats__info {
   display: -webkit-box;
@@ -1743,6 +1750,7 @@ main > article + section {
           align-items: center;
 }
 .slug-hero__image div {
+  position: relative;
   -webkit-box-shadow: 0 0 16px 0 rgba(187, 187, 187, 0.25);
           box-shadow: 0 0 16px 0 rgba(187, 187, 187, 0.25);
   border: 20px solid #fff;
@@ -1859,6 +1867,7 @@ main > article + section {
   color: #fff;
 }
 .slug-about-card__image {
+  position: relative;
   --about-image-size: 95%;
   margin: 30px auto 0;
   width: var(--about-image-size);
@@ -1950,6 +1959,7 @@ main > article + section {
 }
 .slug-advantages__image {
   border-radius: 16px;
+  overflow: hidden;
 }
 @media (max-width: 1279px) {
   .slug-advantages__grid {
@@ -2360,6 +2370,7 @@ main > article + section {
   margin-bottom: 24px;
   border-radius: 10px;
   padding-bottom: 60%;
+  overflow: hidden;
 }
 .slug-youtube-card__image svg {
   -webkit-box-sizing: content-box;
@@ -2854,6 +2865,7 @@ main > article + section {
 .journal-card__image {
   display: block;
   border-radius: 16px;
+  overflow: hidden;
   height: 264px;
 }
 .journal-card .h4 a {
@@ -3209,6 +3221,7 @@ main > article + section {
   z-index: 1;
 }
 .feedback-card__avatar {
+  position: relative;
   border-radius: 50%;
   margin-bottom: 24px;
   padding-bottom: 100%;

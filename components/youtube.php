@@ -30,9 +30,13 @@ $post_id = pll_get_post(271);
             foreach (get_field('youtube_videos', $post_id) as $video) :
             ?>
               <div class="carousel__slide" data-carousel-slide>
-                <div class="slug-youtube-card" data-slug-youtube-card="dQw4w9WgXcQ">
-                  <div class="slug-youtube-card__image bg-cover"
-                    style="background-image: url(https://i.ytimg.com/vi/<?= $video['youtube_id'] ?>/hqdefault.jpg);">
+                <div class="slug-youtube-card" data-slug-youtube-card="<?= $video['youtube_id'] ?>">
+                  <div class="slug-youtube-card__image">
+                    <img
+                      class="image-full-cover absolute-top-left"
+                      loading="lazy"
+                      src="https://i.ytimg.com/vi/<?= $video['youtube_id'] ?>/hqdefault.jpg"
+                      alt="<?= $video['title'] ?>">
                     <svg width="42" height="42" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="#play-circle" />
                     </svg>

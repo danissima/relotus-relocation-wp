@@ -17,7 +17,7 @@ $promo_slider = get_field('promo_slider');
           <h1 class="h1 h1_blue">
             <?= pll__('Стартап-виза') ?>
           </h1>
-			<p class="h1 h1_blue">
+          <p class="h1 h1_blue">
             <?= pll__('Поможем переехать в Испанию без стресса и ошибок за 45 дней') ?>
           </p>
           <p><?= pll__('Подберем лучший ВНЖ или визу под ваши цели и ситуацию') ?></p>
@@ -49,8 +49,9 @@ $promo_slider = get_field('promo_slider');
             <?php
             foreach ($promo_slider as $key => $slide) :
             ?>
-              <div class="home-hero-slider__image bg-cover"
-                style="background-image: url(<?= $slide['slide_image'] ?>);" data-carousel-image="<?= $key ?>"></div>
+              <div class="home-hero-slider__image" data-carousel-image="<?= $key ?>">
+                <img loading="lazy" class="image-full-cover" src="<?= $slide['slide_image'] ?>" alt="">
+              </div>
             <?php endforeach; ?>
 
             <!-- controls -->
@@ -78,11 +79,13 @@ $promo_slider = get_field('promo_slider');
   include 'components/products.php';
   include 'components/services.php';
   ?>
-	
+
   <section class="home-stats section">
     <div class="container">
       <div class="home-stats__content">
-        <div class="home-stats__image bg-cover" style="background-image: url(<?= the_field('stats_image'); ?>);"></div>
+        <div class="home-stats__image">
+          <img class="image-full-cover" loading="lazy" src="<?= the_field('stats_image'); ?>" alt="">
+        </div>
         <div class="home-stats__info block block_equal-padding">
           <h2 class="h2 h2_blue"><?= the_field('stats_title'); ?></h2>
           <p><?= the_field('stats_description'); ?></p>

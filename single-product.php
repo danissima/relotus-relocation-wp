@@ -36,7 +36,9 @@ $promo_list = get_field('promo_list');
             </button>
           </div>
           <div class="slug-hero__image">
-            <div class="bg-cover" style="background-image: url(<?= get_field('promo_image')['url'] ?>)"></div>
+            <div>
+              <img class="image-full-cover absolute-top-left" loading="lazy" src="<?= get_field('promo_image')['url'] ?>" alt="">
+            </div>
           </div>
         </div>
         <button class="slug-hero__action button button_primary" type="button" data-button="consultation">
@@ -66,8 +68,9 @@ $promo_list = get_field('promo_list');
                 <div class="h3"><?= $card['title'] ?></div>
                 <p><?= $card['description'] ?></p>
               </div>
-              <div class="slug-about-card__image bg-cover mask-<?= $card['image_shape'] ?>"
-                style="background-image: url(<?= $card['image'] ?>);"></div>
+              <div class="slug-about-card__image mask-<?= $card['image_shape'] ?>">
+                <img class="image-full-cover absolute-top-left" loading="lazy" src="<?= $card['image'] ?>" alt="">
+              </div>
             </div>
           <?php endforeach; ?>
         </div>
@@ -222,8 +225,9 @@ $promo_list = get_field('promo_list');
                 <strong class="numbers"><?= $card['title'] ?></strong>
                 <p><?= $card['description'] ?></p>
               </div>
-              <div class="slug-about-card__image bg-cover mask-<?= $card['image_shape'] ?>"
-                style="background-image: url(<?= $card['image'] ?>);"></div>
+              <div class="slug-about-card__image mask-<?= $card['image_shape'] ?>">
+                <img class="image-full-cover absolute-top-left" src="<?= $card['image'] ?>" alt="">
+              </div>
             </div>
           <?php endforeach; ?>
         </div>

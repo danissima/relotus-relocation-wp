@@ -7,8 +7,8 @@ $position = get_field('client_position', $id);
 ?>
 
 <a href="<?= $link ?>" class="feedback-card">
-  <div class="feedback-card__avatar bg-cover"
-    style="background-image: url(<?= $photo ?>);">
+  <div class="feedback-card__avatar">
+    <img class="image-full-cover absolute-top-left" loading="lazy" src="<?= $photo ?>" alt="<?= $name ?>">
   </div>
   <div class="h4"><?= $name ?></div>
   <div class="feedback-card__text">

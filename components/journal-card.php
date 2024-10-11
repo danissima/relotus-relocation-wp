@@ -12,8 +12,9 @@ $image = get_field('image', $id)['sizes']["medium_large"];
   <!-- <div class="journal-card__badge">
     <?= pll__('Новое') ?>
   </div> -->
-  <a class="journal-card__image bg-cover" href="<?= $link ?>"
-    style="background-image: url(<?= $image ?>);"></a>
+  <a class="journal-card__image" href="<?= $link ?>">
+    <img class="image-full-cover" src="<?= $image ?>" loading="lazy" alt="">
+  </a>
   <div class="h4"><a href="<?= $link ?>"><?= $title ?></a></div>
   <p><?= $description ?></p>
   <time datetime="<?= $date ?>"><?= $date_formatted ?></time>
