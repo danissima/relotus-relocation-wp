@@ -37,7 +37,7 @@ $promo_list = get_field('promo_list');
           </div>
           <div class="slug-hero__image">
             <div>
-              <img class="image-full-cover absolute-top-left" loading="lazy" src="<?= get_field('promo_image')['url'] ?>" alt="">
+              <img class="image-full-cover absolute-top-left" loading="lazy" src="<?= get_field('promo_image')['sizes']['large'] ?>" alt="">
             </div>
           </div>
         </div>

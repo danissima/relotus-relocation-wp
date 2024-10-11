@@ -26,7 +26,7 @@ $promo_slider = get_field('promo_slider');
           </button>
         </div>
         <div class="home-hero__image block block_transparent block_equal-padding bg-cover"
-          style="background-image: url(<?= the_field('promo_background'); ?>)">
+          style="background-image: url(<?= get_field('promo_background')['sizes']['large']; ?>)">
 
           <!-- carousel -->
           <div class="home-hero-slider carousel" data-carousel="hero">

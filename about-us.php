@@ -42,7 +42,7 @@ get_header();
             </div>
           </header>
 
-          <div class="about-documents__carousel carousel carousel_grid" data-carousel="about-documents">
+          <div id="about-documents-carousel" class="about-documents__carousel carousel carousel_grid" data-carousel="about-documents">
             <div class="carousel__viewport" data-carousel-viewport>
               <div class="carousel__container">
                 <?php
@@ -51,7 +51,16 @@ get_header();
                   <div class="carousel__slide" data-carousel-slide>
                     <div class="about-documents-card">
                       <div class="about-documents-card__image">
-                        <img loading="lazy" src="<?= $document['photo'] ?>" alt="<?= $document['description'] ?>">
+                        <a
+                          href="<?= $document['photo']['url'] ?>"
+                          data-pswp-width="<?= $document['photo']['width'] ?>"
+                          data-pswp-height="<?= $document['photo']['height'] ?>"
+                          target="_blank">
+                          <img
+                            loading="lazy"
+                            src="<?= $document['photo']['sizes']['medium'] ?>"
+                            alt="<?= $document['description'] ?>">
+                        </a>
                       </div>
                       <div class="h4"><?= $document['title'] ?></div>
                       <p><?= $document['description'] ?></p>

@@ -1,6 +1,7 @@
 import setupCarousel from './carousel.js'
 
 setupDocumentsCarousel()
+setupDocumentsPreview()
 
 function setupDocumentsCarousel() {
   const carousel = document.querySelector('[data-carousel="about-documents"]')
@@ -29,4 +30,19 @@ function setupDocumentsCarousel() {
     },
     carouselArrows,
   )
+}
+
+function setupDocumentsPreview() {
+  const gallery = document.getElementById('about-documents-carousel')
+  if (!gallery) {
+    return
+  }
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#about-documents-carousel',
+    children: 'a',
+    pswpModule: PhotoSwipe
+  });
+
+  lightbox.init();
 }

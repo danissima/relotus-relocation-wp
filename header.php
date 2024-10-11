@@ -56,7 +56,7 @@ $privacy_link = [
   <title><?= wp_title() ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?= $baseUrl ?>/assets/css/app.css">
-  <link rel="icon" href="<?= $baseUrl ?>/assets/images/favicon.ico">
+  <!-- <link rel="icon" href="<?= $baseUrl ?>/assets/images/favicon.ico"> -->
   <?php wp_head(); ?>
 </head>
 

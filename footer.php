@@ -659,6 +659,8 @@ if (pll_current_language('slug') === 'en') {
 <script src="<?= $baseUrl ?>/assets/js/libs/embla.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/maska.js"></script>
 <script src="<?= $baseUrl ?>/assets/js/libs/lite-youtube.js"></script>
+<script src="<?= $baseUrl ?>/assets/js/libs/photoswipe.js"></script>
+<script src="<?= $baseUrl ?>/assets/js/libs/photoswipe-lightbox.js"></script>
 <script type="module" src="<?= $baseUrl ?>/assets/js/app.js"></script>
 
 </body>
