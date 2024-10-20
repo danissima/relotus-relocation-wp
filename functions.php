@@ -172,28 +172,36 @@ add_filter(
 );
 
 /* add journal and stories links between crumbs */
-// add_filter(
-//   'wpseo_schema_breadcrumb',
-//   function ($piece) {
-//     $post = get_post();
+add_filter(
+  'wpseo_schema_breadcrumb',
+  function ($piece) {
+    $post_type = get_post()->post_type;
 
+    if ($post_type === 'journal') {
+      $new_item = [
+        '@type' => 'ListItem',
+        'position' => 2,
+        'name' => get_the_title(pll_get_post(137)),
+        'item' => get_permalink(pll_get_post(137)),
+      ];
 
-//     if (is_single() && ($post->post_type === 'journal' || $post->post_type === 'stories')) {
-//       $new_item = [
-//         '@type' => 'ListItem',
-//         'position' => 2,
-//         'name' => get_the_title(),
-//         'item' => get_permalink(),
-//       ];
+      array_splice($piece['itemListElement'], 1, 0, [$new_item]);
+      $piece['itemListElement'][2]['position'] = 3;
+    } else if ($post_type === 'stories') {
+      $new_item = [
+        '@type' => 'ListItem',
+        'position' => 2,
+        'name' => get_the_title(pll_get_post(419)),
+        'item' => get_permalink(pll_get_post(419)),
+      ];
 
-//       // array_splice($piece['itemListElement'], 1, 0, [$new_item]);
+      array_splice($piece['itemListElement'], 1, 0, [$new_item]);
+      $piece['itemListElement'][2]['position'] = 3;
+    }
 
-//       // $piece['itemListElement'][2]['position'] = 3;
-//     }
-
-//     return $piece;
-//   },
-// );
+    return $piece;
+  },
+);
 
 /* remove breadcrumbs from home page */
 add_filter(
