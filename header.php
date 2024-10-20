@@ -49,7 +49,7 @@ $privacy_link = [
 ?>
 
 <!DOCTYPE html>
-<html lang="ru">
+<html <?= language_attributes()?> prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#">
 
 <head>
   <meta charset="UTF-8">

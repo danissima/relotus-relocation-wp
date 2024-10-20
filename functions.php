@@ -151,3 +151,92 @@ pll_register_string('clients_cases', 'Кейсы клиентов');
 pll_register_string('stories_from_people', 'Истории людей, которые переехали в Испанию');
 pll_register_string('certificates', 'Сертификаты');
 pll_register_string('startup-visa', 'Стартап-виза');
+
+/* add permalink to last breadcrumb item */
+add_filter(
+  'wpseo_schema_breadcrumb',
+  function ($piece) {
+    $list = $piece['itemListElement'];
+    $piece['itemListElement'][array_key_last($list)]['item'] = get_permalink();
+
+    return $piece;
+  },
+);
+
+/* set logo as default og:image */
+add_filter(
+  'wpseo_add_opengraph_additional_images',
+  function ($image_container) {
+    $image_container->add_image_by_url('https://relotus-relocation.com/wp-content/uploads/2024/10/logo-text.png');
+  }
+);
+
+/* add journal and stories links between crumbs */
+// add_filter(
+//   'wpseo_schema_breadcrumb',
+//   function ($piece) {
+//     $post = get_post();
+
+
+//     if (is_single() && ($post->post_type === 'journal' || $post->post_type === 'stories')) {
+//       $new_item = [
+//         '@type' => 'ListItem',
+//         'position' => 2,
+//         'name' => get_the_title(),
+//         'item' => get_permalink(),
+//       ];
+
+//       // array_splice($piece['itemListElement'], 1, 0, [$new_item]);
+
+//       // $piece['itemListElement'][2]['position'] = 3;
+//     }
+
+//     return $piece;
+//   },
+// );
+
+/* remove breadcrumbs from home page */
+add_filter(
+  'wpseo_schema_graph_pieces',
+  function ($pieces) {
+    if (is_front_page()) {
+      return \array_filter($pieces, function ($piece) {
+        return !$piece instanceof \Yoast\WP\SEO\Generators\Schema\Breadcrumb;
+      });
+    }
+
+    return $pieces;
+  },
+);
+
+/* remove query-input key from seo website schema */
+add_filter(
+  'wpseo_schema_website',
+  function ($data) {
+    foreach ($data['potentialAction'] as $key => $action) {
+      unset($data['potentialAction'][$key]['query-input']);
+    }
+
+    return $data;
+  }
+);
+
+/* add organization seo schema */
+add_filter(
+  'wpseo_schema_graph',
+  function ($data) {
+    $organization = [
+      '@id' => 'https://relotus-relocation.com/#organization',
+      '@type' => 'Organization',
+      'image' => 'https://relotus-relocation.com/wp-content/uploads/2024/10/favicon-relotus-300x300.png',
+      'url' => 'https://relotus-relocation.com/',
+      'email' => 'startup-visa@yandex.ru',
+      'name' => 'Relotus Relocation',
+      'telephone' => '+34(681)992-847',
+    ];
+
+    array_push($data, $organization);
+
+    return $data;
+  }
+);
