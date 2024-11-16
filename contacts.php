@@ -11,6 +11,7 @@ $address = get_field('address', 'option');
 $email = get_field('email', 'option');
 $telegram = get_field('telegram', 'option');
 $whatsapp = get_field('whatsapp', 'option');
+$coords = get_field('coords', 'option');
 ?>
 
 <main>
@@ -59,7 +60,7 @@ $whatsapp = get_field('whatsapp', 'option');
             </div>
           </div>
           <div class="contacts__map" style="grid-area: map;">
-            <div style="position:relative;overflow:hidden; height: 100%;"><a
+            <!-- <div style="position:relative;overflow:hidden; height: 100%;"><a
                 href="https://yandex.ru/maps/10429/barcelona/?utm_medium=mapframe&utm_source=maps"
                 style="color:#eee;font-size:12px;position:absolute;top:0px;">Барселона</a><a
                 href="https://yandex.ru/maps/10429/barcelona/house/ZlcHcwRmTEIbWF90YHV1d3Vh/?ll=2.157385%2C41.393479&utm_medium=mapframe&utm_source=maps&z=14.14"
@@ -67,11 +68,19 @@ $whatsapp = get_field('whatsapp', 'option');
                 Яндекс Карты</a><iframe
                 src="https://yandex.ru/map-widget/v1/?lang=<?= pll_current_language() ?>_RU&ll=2.157385%2C41.393479&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1ODkyNDAzNjg3EkpTcGFpbiwgQ29tdW5pdGF0IGF1dMOybm9tYSBkZSBDYXRhbHVueWEsIEJhcmNlbG9uYSwgQXZpbmd1ZGEgRGlhZ29uYWwsIDQxOSIKDYrVCUAVK5QlQg%2C%2C&z=14.14"
                 width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-            </div>
+            </div> -->
+            <gmp-map
+              center="<?= $coords ?>"
+              zoom="14"
+              map-id="CONTACTS_MAP"
+              style="height: 100%"><gmp-advanced-marker position="<?= $coords ?>" title="<?= $address ?>" /></gmp-map>
           </div>
         </div>
       </div>
     </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCcmE5oDpbtkCFv3VrroZKbzvKjSNajsQ&libraries=marker&v=beta"
+      defer></script>
   </section>
 
   <?php
